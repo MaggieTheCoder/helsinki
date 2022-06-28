@@ -18,14 +18,16 @@ const Statistics = ({
     );
   }
   return (
-    <div>
-      <StatisticLine text="good:" value={good} />
-      <StatisticLine text="bad:" value={bad} />
-      <StatisticLine text="neutral:" value={neutral} />
-      <StatisticLine text="all clicks:" value={allClicks} />
-      <StatisticLine text="average score:" value={AverageScore} />
-      <StatisticLine text="positive percentage" value={PositivePercentage} />
-    </div>
+    <table>
+      <tbody>
+        <StatisticLine text="good" value={good} />
+        <StatisticLine text="bad" value={bad} />
+        <StatisticLine text="neutral" value={neutral} />
+        <StatisticLine text="all clicks" value={allClicks} />
+        <StatisticLine text="average" value={AverageScore} />
+        <StatisticLine text="positive" value={PositivePercentage} />
+      </tbody>
+    </table>
   );
 };
 
